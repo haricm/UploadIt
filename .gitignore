@@ -1,9 +1,11 @@
 
 # Images
-# External Modules
 public/images/uploaded/**/*
 public/images/uploaded/*
 public/images/uploaded/
+
+#configuration file
+config/config.js
 
 # Database folder
 db/**/*

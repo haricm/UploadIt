@@ -89,24 +89,7 @@ exports.upload = function (req, res)	{
     				}
 				});
     		});
-	    /*	
-	       var newFile = fs.createWriteStream("copy");
-	       request.pipe(newFile);
-	       request.on('end', function() {
-    			response.end('uploaded!');
-			});*/
 
-	       /*
-		   user.password = newpassword;
-		   user.save(function(err)	{
-			   if(err)
-			       console.log(err)
-			   else
-			   {
-				  mailclient.sendPasswordResetEmail(user.fullName, user.email, user.username, newpassword);
-			   }
-			   
-		   });*/
 		}
 	});
 	

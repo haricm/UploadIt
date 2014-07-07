@@ -13,8 +13,6 @@ easyimg.crop(
     },
     function(err, image) {
         if (err) throw err;
-        console.log('Cropped');
-        console.log(image);
         easyimg.crop(
             {
                 src:filepath, dst:dirpath + 'vertical.jpg',
@@ -24,8 +22,6 @@ easyimg.crop(
             },
             function(err, image) {
                 if (err) throw err;
-                console.log('Cropped');
-                console.log(image);
                 easyimg.crop(
                     {
                         src:filepath, dst:dirpath + 'horizontal_small.jpg',
@@ -35,8 +31,6 @@ easyimg.crop(
                     },
                     function(err, image) {
                         if (err) throw err;
-                        console.log('Cropped');
-                        console.log(image);
                         easyimg.crop(
                             {
                                 src:filepath, dst:dirpath + 'gallery.jpg',
@@ -46,8 +40,6 @@ easyimg.crop(
                             },
                             function(err, image) {
                                 if (err) throw err;
-                                    console.log('Cropped');
-                                    console.log(image);
                                     cb();
                             }
                         );

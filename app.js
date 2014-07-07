@@ -5,7 +5,6 @@ var env = process.env.NODE_ENV || 'development'
     , config = require('./config/config')[env]
     , mongoose = require('mongoose')
     , passport = require('passport')
-    , user = require('./app/controllers/api/user')
     , site = require('./app/controllers/site')
     , express = require('express')
     , fs = require('fs')
@@ -71,11 +70,6 @@ app.get('/changepassword', site.changePasswordForm);
 app.post('/changepassword', site.changePassword);
 app.get('/signup', site.signUpForm);
 app.post('/signup', site.signUp);
-
-//app.get('/oauth/tokeninfo', function(req,res) {
-//    res.send("success");
-//});
-app.get('/api/userinfo', user.info);
 
 //Self-Signed Certificates
 var privatekey = fs.readFileSync('certs/privatekey.pem');

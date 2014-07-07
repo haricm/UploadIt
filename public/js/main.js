@@ -30,7 +30,7 @@ var validateImage = function (image) {
 var createAndValidateImage = function () {
     var previewImg= createImage();
     setImgSource(previewImg);
-    //validateImage(previewImg);
+    validateImage(previewImg);
 };
 
 $("#img-chooser").change(function () {
