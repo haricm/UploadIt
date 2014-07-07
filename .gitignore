@@ -1,0 +1,20 @@
+
+# Images
+# External Modules
+public/images/uploaded/**/*
+public/images/uploaded/*
+public/images/uploaded/
+
+# Database folder
+db/**/*
+db/*
+db/
+
+# External Modules
+node_modules/**/*
+node_modules/*
+node_modules/
+
+# Self Signed Certificates
+certs/*
+certs/
