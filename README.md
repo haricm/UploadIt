@@ -28,6 +28,7 @@ $ openssl req -new -key certs/privatekey.pem -out certs/certrequest.csr
 $ openssl x509 -req -in certs/certrequest.csr -signkey certs/privatekey.pem -out certs/certificate.pem
 $ npm install
 $ node app.js
-Start using application. When you create an account make sure you enter valid email address. You will have to click activation link from your mail id to activate your account.
+Application url : https://localhost:8000/
+When you create an account make sure you enter valid email address. You will have to click activation link from your mail id to activate your account.
  ```
 
